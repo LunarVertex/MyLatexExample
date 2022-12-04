@@ -1,0 +1,39 @@
+\documentclass[fontset=windows]{article}
+\usepackage[margin=1in]{geometry}%设置边距，符合Word设定
+\usepackage{ctex}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{graphicx}%插入图片
+\graphicspath{{Figures/}}%文章所用图片在当前目录下的 Figures目录
+
+\bibliographystyle{plain}% 参考文献引用格式
+\newcommand{\upcite}[1]{\textsuperscript{\cite{#1}}}
+
+\renewcommand{\contentsname}{\centerline{Contents}} %经过设置word格式后，将目录标题居中
+
+
+\title{\heiti\zihao{2} Academic Writing, Norms, and Ethics}
+\author{\songti Lizhengwen}
+\date{2022.12.02}
+
+
+\begin{document}
+	\maketitle
+
+
+
+
+
+\section{This is a section}
+Hello world! Hello Sjtuer! 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=5cm]{fig1.png}
+	\caption{This is the school logo}
+	\label{1}
+\end{figure}
+
+这句话是测试能否进行引用及支持中文\upcite{1}。
+\bibliography{books}
+
+\end{document}
